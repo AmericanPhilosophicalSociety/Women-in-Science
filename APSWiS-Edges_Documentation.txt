@@ -1,0 +1,105 @@
+American Philosophical Society Library & Museum
+Dataset documentation: Visualizing Women in Science Nodes (APSWiS-01)
+
+---
+Contents:
+    Document type
+    Document identifier
+    File format
+    Time Period, Start Date of Data Coverage
+    Time Period, End Date of Data Coverage
+    Date of this version
+    Source(s)
+    Data description
+    Column structure and Contents
+    Assumptions
+    Normalizations and Data Standards
+    Related dataset(s)
+    License
+    Caveat Emptor
+    Preferred citation
+    Process & Attribution
+---
+Document type: Dataset
+
+Dataset identifier: APSWiS-01
+
+File format: CSV
+
+Time Period, Start Date of Data Coverage: 1900
+
+Time Period, End Date of Data Coverage: 2005
+
+Date of this version: March 2023
+
+Source(s):
+  Florence Rena Sabin Papers:
+    - Collection: Florence Rena Sabin Papers, 1900-1946, American Philosophical Society
+    - Collection call number: Mss.B.Sa12
+    - Finding aid: https://search.amphilsoc.org/collections/view?docId=ead/Mss.B.Sa12-ead.xml
+  Florence Barbara Seibert Seibert Papers:
+    - Collection: Florence Barbara Seibert Papers, 1914-1977, American Philosophical Society
+    - Collection call number: Mss.B.Se41
+    - Finding aid: https://search.amphilsoc.org/collections/view?docId=ead/Mss.B.Se41-ead.xml
+  Barbara McClintock Papers:
+    - Collection: Barbara McClintock Papers, 1927-1991, American Philosophical Society
+    - Collection call number: Mss.Ms.Coll.79
+    - Finding aid: https://search.amphilsoc.org/collections/view?docId=ead/Mss.Ms.Coll.79-ead.xml
+  Mildred Cohn Papers:
+    - Collection: Mildred Cohn Papers, 1934-2008, American Philosophical Society
+    - Collection call number: Mss.Ms.Coll.17
+    - Finding aid: https://search.amphilsoc.org/collections/view?docId=ead/Mss.Ms.Coll.17-ead.xml
+  Rose Mooney-Slater Papers:
+    - Collection: Rose Mooney-Slater Papers, 1917-1981, American Philosophical Society
+    - Collection call number: Mss.B.SL22
+    - Finding aid: https://search.amphilsoc.org/collections/view?docId=ead/Mss.B.SL22-ead.xml
+  Jackson Laboratory Oral History:
+    - Collection: Jackson LAboratory Oral History Collection, 1986, American Philosophical Society
+    - Collection call number: Mss.Ms.Coll.53
+    - Finding aid: https://search.amphilsoc.org/collections/view?docId=ead/Mss.Ms.Coll.53-ead.xml
+Note that over fifty additional collections were consulted but are not primary sources for this dataset. These collections are noted in the dataset itself when relevant.
+
+Data description:
+This dataset documents connections between women scientists in the collections of the American Philosophical Society. Each row records one connection. The network data produces an undirected graph.
+
+This dataset serves as a complement to APSWiS-02, a dataset that provides biographical information about the nodes in the network graph.
+
+Column structure and contents:
+  - person A: A human readable identifier for the source node. Generally the person's full name.
+  - id A: A unique identifier for the source node. Identifiers can be VIAF, ORCID, or the local identifier APS-WIS. Identifiers are defined in the node dataset, APSWiS-02.
+  - person B: A human readable identifier for the target node. Generally the person's full name.
+  - id B: A unique identifier for the target node. Identifiers can be VIAF, ORCID, or the local identifier APS-WIS. Identifiers are defined in the node dataset, APSWiS-02.
+  - connection: A controlled description of the nature of the connection.
+  - collection item: The folder in which the connection was found. This data has not been fully normalized. This data was not recorded during the earliest phases of the project and is therefore not available for all items.
+  - date: A date for the connection, if recorded. If there are multiple dates, they generally correspond to different values in the collection field. This data was recorded inconsistently throughoug the projects due to difficulties in determining start and end dates for relationships.
+  - notes: Notes written down during the data gathering process.
+  - original data: Legacy data from an earlier phase of the project. This generally provides a prose description of the connection or some biographical information about one of the people documented in the connection.
+
+Assumptions: 
+Some connections have been inferred on the basis of a first or last name alone. These assumptions are generally notated either in the "notes" or "original data" column. The data provided in the "connection" column is generally inferred from other information mentioned in the letter.
+
+Normalizations and Data Standards:
+Names generally include both the maiden name and married name. The term "mentioned in letter" is used to determine that the existence of a relationship could be determined from the letter or source material but that this relationship could not be further specified.
+
+Related Dataset(s):
+APSWiS-02
+
+License:
+These datasets are available for anyone to evaluate, share, reuse, and remix as they wish under a Creative Commons Attribution 4.0 License. Please attribute APS Library & Museum.
+
+
+Caveat Emptor:
+These datasets were created as part of the American Philosophical Society's Open Data Initiative (Learn more at http://diglib.amphilsoc.org/data).
+Although contributors took care to minimize mistakes and inconsistencies in the creation of these items, and have included any assumptions or choices made on their part that may affect interoperability or integrity of the data, APS cannot guarantee that they are free of instances of human error. They are offered "as is," and researchers are encouraged to consult the original records in digital or physical format in the event of uncertainty. If you have feedback or notice errors in the data, please contact us at digitalprojects@amphilsoc.org.
+
+Preferred Citation:
+Chicago (17th ed., bibliography): Sutherland, Serenity and David Ragnar Nelson. Visualizing Women in Science. Dataset APSWiS-01. Distributed by Philadelphia: American Philosophical Society Library & Museum, 2023. [url]
+
+Phase One: 2018
+Data gathered by Serenity Sutherland as part of a Digital Humanities Fellowship at the American Philosophical Society Library. Assistance in data formatting provided by Bayard L. Miller and Cynthia Heider.
+Phase Two: Spring-Summer 2022
+Serenity Sutherland returned to the APS for another fellowship to refine and expand the dataset. David Ragnar Nelson proposed a new data structure and Nelson and Sutherland reformatted the data.
+Phase Three: Summer-Fall 2022
+Process: David Ragnar Nelson and Bayard L. Miller conducted a survey of the collections of male scientists to fill in gaps in the network.
+Phase Four: Winter 2022-2023
+Final data enrichment and cleaning. Documentation created. Dataset and documentation uploaded to the APS Digital Library.
