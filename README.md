@@ -1,5 +1,5 @@
 # Women in Science
-Open data used for powering the American Philosophical Society's project [Visualizing Women in Science](diglib.amphilsoc.org/womeninscience).
+Open data used for powering the American Philosophical Society's project [Visualizing Women in Science](https://diglib.amphilsoc.org/womeninscience).
 
 ## What are these data?
 The American Philosophcial Society (APS) holds the collections of several women scientists. Using these collections as a starting point, we combed the correspondence housed at the APS for evidence of collaboration and connections between women scientists. This data was used to build a network visualization; however, the raw data available in this repository contains additional information about the sources for the nodes and edges in the network. 
